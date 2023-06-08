@@ -15,11 +15,6 @@ export default function Home() {
   const fetchData = async () => {
     try {
       const response = await axios.get('https://api.brest.bar/items/bars');
-
-      https://api.brest.bar/items/bars_categories``
-
-
-      
       console.log('Response:', response.data);
     } catch (error) {
       console.error('Error:', error);
@@ -29,7 +24,7 @@ export default function Home() {
   fetchData();
 
   return (
-    <main className=" ">
+    <main>
       <header className=" fixed z-50 w-full flex items-center justify-center bg-white shadow-md">
         <div className="w-full  ">
           <div className="container mx-auto px-4 py-6">
@@ -40,7 +35,6 @@ export default function Home() {
                   Bar
                 </span>
               </h1>
-
               <a className="bg-pink-700 rounded-full px-4 py-2 cursor-pointer">
                 🙋 Faire une demande
               </a>
